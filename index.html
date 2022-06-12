@@ -1,51 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game of Life</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-    <h2>
-        Game of Life
-    </h2>
-    <div id="headingDiv">
-        <span class="left">
-            Born Rule:
-            <input type="text" id="bornInput" class="textInput" value="3">
-            Survive Rule:
-            <input type="text" id="surviveInput" class="textInput" value="23">
-        </span>
-        <span class="right">
-            Population: <span id="population">0</span>
-            |
-            Generation: <span id="generation">0</span>
-        </span>
-    </div>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Game of Life</title>
+		<link rel=StyleSheet href="style.css" type="text/css" media=screen>
+		
+	</head>
+	
+	<body>
+	
+		<h2>  
+		  Game of Life
+		 </h2>
 
-    <div id="canvasDiv">
-        <canvas width="840" height="640" id="canvas"></canvas>
-    </div>
-    <div id="controls">
-        <input type="button" id="nextButton" value="Next State">
-        <input type="button" id="startButton" value="Start">
-        <input type="button" id="fasterButton" value="Faster">
-        <input type="button" id="slowerButton" value="Slower">
-        <input type="button" id="clearButton" value="Clear">
-        <input type="button" id="randomButton" value="Random">
+		<div id="headingdiv">  
+		  <span class="left">
+		   Born Rule:
+			<input type="text" id="Binput" class="textinput" value="3">  
+			
+		   Survive Rule:
+			<input type="text" id="Sinput" class="textinput" value="23">
+		   </span>
+		   
+		   <span class="right">
+			 Population: <span id="population">0</span>
+			 |
+			 Generation: <span id="generation">0</span>
+		   </span>
+		  
+		 </div>
+		  
+		<div id="canvasdiv">
+		  <canvas width="840" height="640" id = "canvas">
+		</div>
 
-        <select id="selectInput">
+			  
+		<div id="controldiv">
+			<input type="button" id="nextbutton" value="Next state"></input>
+			<input type="button" id="startbutton" value="Start"></input>        
+			<input type="button" id="fasterbutton" value="Faster"></input>
+			<input type="button" id="slowerbutton" value="Slower"></input>      
+			<input type="button" id="clearbutton" value="Clear"></input>
+			<input type="button" id="randombutton" value="Random"></input>      
+			<select id="selectinput">
+			</select> 
+		</div> 
 
-        </select>
-    </div>
-    <div id="wiki">
-        Check
-        <a target= "_blank" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Wikipedia</a>
-    </div>
+		<div id="wikipedia">
+		  Check
+		  <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Wikipedia</a>
+		  for infos about the game.
+		</div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+	</body>
+	
+	<script type="text/javascript" src="script.js"></script>
+	
+	
+</html>	
+		
